@@ -9,18 +9,17 @@ A curated collection of open source tools for online safety
 * [TMK (for Temporal Match Kernel)](https://github.com/facebook/ThreatExchange/tree/main/tmk)
 
 
-VPDQ - PDQ for videos
+* [VPDQ](https://github.com/facebook/ThreatExchange/tree/main/vpdq)
 
-https://github.com/facebook/ThreatExchange/tree/main/vpdq
-Hasher-Matcher-Actioner (CLIP demo)
-https://github.com/juanmrad/HMA-CLIP-demo  
-Perception (used in Facebook’s PDQ) - perceptual hashing benchmarking
-https://github.com/thorn-oss/perception
-Altitude
-https://github.com/jigsaw-code/altitude
-Lattice Extract
-https://github.com/adobe/lattice_extract
-RocketChat CSAM 
-https://github.com/prostasia/rocketchatcsam 
-MediaModeration (Wiki Extension) 
-https://github.com/wikimedia/mediawiki-extensions-MediaModeration?tab=readme-ov-file 
+* [Hasher-Matcher-Actioner (CLIP demo)](https://github.com/juanmrad/HMA-CLIP-demo)
+
+- [Perception ](https://github.com/thorn-oss/perception)
+
+- [Altitude](https://github.com/jigsaw-code/altitude)
+
+
+- [Lattice Extract](https://github.com/adobe/lattice_extract)
+
+- [RocketChat CSAM](https://github.com/prostasia/rocketchatcsam)
+
+- [MediaModeration (Wiki Extension)](https://github.com/wikimedia/mediawiki-extensions-MediaModeration?tab=readme-ov-file)

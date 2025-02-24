@@ -21,11 +21,11 @@ A curated collection of open source tools for online safety
 * [Wikimedia Smite Spam](https://github.com/wikimedia/mediawiki-extensions-SmiteSpam)
 
 ## Enforcement
-* []()
+* [NCMEC](https://github.com/ello/ncmec_reporting)
 
 ## Threat Intelligtence
-* []()
-* []()
-* []()
-* []()
-* []()
+* [ThreatExchange](https://github.com/facebook/ThreatExchange )
+* [ThreatExchange Client via PHP](https://github.com/certly/threatexchange)
+* [ThreatExchange via Python](https://github.com/facebook/ThreatExchange/tree/main/python-threatexchange)
+* [Content Classification Service (IFTAS)](https://about.iftas.org/activities/moderation-as-a-service/content-classification-service/)
+* [FediCheck](  https://about.iftas.org/activities/moderation-as-a-service/fedicheck/)

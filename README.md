@@ -1,5 +1,10 @@
 # awesome-safety-tools
-A curated collection of open source tools for online safety
+A curated collection of open source tools for online safety. 
+
+Inspired by prior work like [Awesome Redteaming](https://github.com/yeyintminthuhtut/Awesome-Red-Teaming/) and [Awesome Phishing](https://github.com/PhishyAlice/awesome-phishing).
+
+Help and contribute by adding a pull request to add more resources and tools!
+
 
 ## Hash Matching 
 * [Hasher Matcher Action (HMA) by Meta](https://github.com/facebook/ThreatExchange/tree/main/hasher-matcher-actioner)

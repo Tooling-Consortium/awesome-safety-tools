@@ -15,7 +15,7 @@ A curated collection of open source tools for online safety
 
 ## Classifiers
 * [Osmod](https://github.com/conversationai/conversationai-moderator)  
-*  [Perspective API](https://github.com/conversationai/perspectiveapi)
+* [Perspective API](https://github.com/conversationai/perspectiveapi)
 * [Presidio](https://github.com/microsoft/presidio)
 * [Llama Guard](https://github.com/meta-llama/PurpleLlama/tree/main/Llama-Guard3)
 * [ShieldGemma](https://www.kaggle.com/code/fernandosr85/shieldgemma-web-content-safety-analyzer?scriptVersionId=198456916)
@@ -32,6 +32,9 @@ A curated collection of open source tools for online safety
 
 ## Clustering
 * [Dachshund](https://github.com/facebookresearch/dachshund/)
+* [Apache SpamAssassin](https://spamassassin.apache.org)
+* [scikit-learn](https://github.com/scikit-learn/scikit-learn)
+* [The Hugging Face Library](https://huggingface.co)
 
 ## Investigation
 * [Access by Discord](https://github.com/discord/access)
@@ -45,6 +48,11 @@ A curated collection of open source tools for online safety
 
 ## Enforcement
 * [NCMEC](https://github.com/ello/ncmec_reporting)
+
+## Review
+* [RabbitMQ](https://github.com/rabbitmq)
+* [BullMQ](https://github.com/taskforcesh/bullmq)
+* [Owlculus](https://github.com/be0vlk/owlculus)
 
 ## Threat Intelligtence
 * [ThreatExchange](https://github.com/facebook/ThreatExchange )

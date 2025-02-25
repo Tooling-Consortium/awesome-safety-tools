@@ -23,3 +23,23 @@ A curated collection of open source tools for online safety
 - [RocketChat CSAM](https://github.com/prostasia/rocketchatcsam)
 
 - [MediaModeration (Wiki Extension)](https://github.com/wikimedia/mediawiki-extensions-MediaModeration?tab=readme-ov-file)
+
+
+## Classifiers
+
+- [Osmod](https://github.com/conversationai/conversationai-moderator)  
+-  [Perspective API](https://github.com/conversationai/perspectiveapi)
+
+- [Presidio](https://github.com/microsoft/presidio)
+
+- [Llama Guard](https://github.com/meta-llama/PurpleLlama/tree/main/Llama-Guard3)
+
+- [ShieldGemma](https://www.kaggle.com/code/fernandosr85/shieldgemma-web-content-safety-analyzer?scriptVersionId=198456916)
+
+- [Roblox Voice Safety Classifier](https://github.com/Roblox/voice-safety-classifier)
+
+- [Detoxify](https://github.com/unitaryai/detoxify)
+
+- [NSFW Filtering](https://github.com/nsfw-filter/nsfw-filter)
+
+- [NSFW Keras Model](https://github.com/GantMan/nsfw_model)

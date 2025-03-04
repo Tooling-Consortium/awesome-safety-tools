@@ -102,6 +102,27 @@ Help and contribute by adding a pull request to add more resources and tools!
 * [FediCheck](  https://about.iftas.org/activities/moderation-as-a-service/fedicheck/)
   * a web service designed to assist ActivityPub service providers, such as Mastodon servers
 
+  ## Redteaming Tools
+
+- [PyRIT Documentation](https://azure.github.io/PyRIT/)  
+  - Microsoft’s Python-based tool for AI red teaming and security testing.
+
+- [AI Benchmarking Tool](https://github.com/LLM-Canary/LLM-Canary)  
+  - Evaluates AI models for security vulnerabilities and adversarial robustness.
+
+- [Prompt Fuzzer Red Teaming Tool](https://github.com/prompt-security/ps-fuzz)  
+  - Tool for testing prompt injection vulnerabilities in AI systems.
+
+- [Open Source Red Teaming Tool – Nvidia](https://github.com/NVIDIA/garak)  
+  - Framework for adversarial testing and model evaluation.
+
+- [Tool that Enables Models to Chat with One Another](https://github.com/socketteer?tab=repositories) 
+  - Allows AI models to interact, helping test conversational weaknesses.
+
+- [Microsoft AI Tool – Counterfit](https://github.com/Azure/counterfit/)  
+  - Automation tool for assessing AI model security and robustness.
+
+
 ## Datasets
 * [Aegis Content Safety by NVIDIA](https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0)
   * a dataset created by NVIDIA to aid in content moderation and toxicity detection

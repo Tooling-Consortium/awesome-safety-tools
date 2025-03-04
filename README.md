@@ -128,3 +128,28 @@ Help and contribute by adding a pull request to add more resources and tools!
   * a dataset created by NVIDIA to aid in content moderation and toxicity detection
 * [Toxicity by Jigsaw](https://huggingface.co/datasets/google/jigsaw_toxicity_pred)
   * a large number of Wikipedia comments which have been labeled by human raters for toxic behavior
+## Redteaming Datasets
+
+- [Red Team Resistance Leaderboard](https://huggingface.co/spaces/HaizeLabs/red-teaming-resistance-benchmark)  
+  - rankings of AI models based on resistance to adversarial attacks.
+
+- [SidFeel Jailbreak Dataset](https://github.com/sidfeels/PromptsDB)  
+  - a collection of prompts used for jailbreaking AI models.
+
+- [HackAPrompt Jailbreak Dataset](https://huggingface.co/datasets/hackaprompt/hackaprompt-dataset/viewer/default/train?p=1&row=137)  
+  - a dataset for testing AI vulnerability to prompt-based jailbreaking.
+
+- [HiroKachi Jailbreak Dataset](https://sizu.me/love)  
+  - adataset focused on adversarial AI prompt attacks.
+
+- [Rentry Jailbreak Datasets](https://rentry.org/gpt0721)  
+  - collection of datasets related to jailbreak attempts on AI models.
+
+- [DEFCOM Red Teaming Dataset](https://github.com/humane-intelligence/ai_village_defcon_grt_data)  
+  - dataset from DEF CON’s AI red teaming event.
+
+- [Anthropic’s AI Alignment Dataset](https://atlas.nomic.ai/map/anthropic_rlhf)  
+  - data used for reinforcement learning with human feedback (RLHF) to align AI models.
+
+- [Jailbreak Prompt Generator AI Model](https://huggingface.co/tsq2000/Jailbreak-generator)  
+  - AI model that generates jailbreak-style prompts.

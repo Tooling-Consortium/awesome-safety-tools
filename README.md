@@ -157,9 +157,13 @@ Help and contribute by adding a pull request to add more resources and tools!
 
  ## Language Processing Tools
 
-  - [Fugashi](https://www.fugashi.io) 
-   - Open-source Japanese text analysis library. 
+- [Fugashi](fugashi.io)  
+  - open-source Japanese text analysis library.
 
-  - [SnowNLP](https://github.com/isnowfy/snownlp) 
-   - Python NLP library for analyzing Chinese-language text.
+- [SnowNLP](https://github.com/isnowfy/snownlp)
+  - Python NLP library for analyzing Chinese-language text.
+
+
+
+
 

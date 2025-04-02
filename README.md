@@ -163,3 +163,7 @@ Help and contribute by adding a pull request to add more resources and tools!
 - [SnowNLP](https://github.com/isnowfy/snownlp) 
   - Python NLP library for analyzing Chinese-language text.
 
+ ## Databases 
+
+- [Neo4j](https://www.neo4j.com)  
+  - open-source graph database that stores data in a graph structure, rather than tables or columns 

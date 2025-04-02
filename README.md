@@ -128,6 +128,7 @@ Help and contribute by adding a pull request to add more resources and tools!
   * a dataset created by NVIDIA to aid in content moderation and toxicity detection
 * [Toxicity by Jigsaw](https://huggingface.co/datasets/google/jigsaw_toxicity_pred)
   * a large number of Wikipedia comments which have been labeled by human raters for toxic behavior
+
 ## Redteaming Datasets
 
 - [Red Team Resistance Leaderboard](https://huggingface.co/spaces/HaizeLabs/red-teaming-resistance-benchmark)  
@@ -153,3 +154,12 @@ Help and contribute by adding a pull request to add more resources and tools!
 
 - [Jailbreak Prompt Generator AI Model](https://huggingface.co/tsq2000/Jailbreak-generator)  
   - AI model that generates jailbreak-style prompts.
+
+ ## Language Processing Tools
+
+  - [Fugashi](https://www.fugashi.io) 
+   - Open-source Japanese text analysis library. 
+
+  - [SnowNLP](https://github.com/isnowfy/snownlp) 
+   - Python NLP library for analyzing Chinese-language text.
+

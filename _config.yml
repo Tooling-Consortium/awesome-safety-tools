@@ -1,0 +1,20 @@
+title: Awesome AI Safety Tools
+description: A curated list of open-source AI safety tools and resources
+baseurl: "/awesome-safety-tools"  # the subpath of your site
+url: "https://yourusername.github.io"  # replace with your GitHub username
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections for individual tool pages
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+
+# Search settings
+search_enabled: true

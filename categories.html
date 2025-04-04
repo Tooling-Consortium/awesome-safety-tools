@@ -1,0 +1,27 @@
+---
+layout: default
+title: Browse by Categories
+permalink: /categories/
+---
+
+<h1>Browse by Categories</h1>
+
+<div class="category-sections">
+  {% for category in site.data.categories %}
+  <section id="{{ category | slugify }}">
+    <h2><a href="{{ site.baseurl }}/categories/{{ category | slugify }}">{{ category }}</a></h2>
+
+
+    <div class="tools-container">
+      {% assign category_tools = site.data.tools | where: "category", category %}
+      {% for tool in category_tools %}
+      <div class="tool-card">
+        <h3><a href="{{ tool.url | relative_url }}">{{ tool.name }}</a></h3>
+        <p>{{ tool.description }}</p>
+        <p><a href="{{ tool.github_url }}" target="_blank">View on GitHub</a></p>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</div>

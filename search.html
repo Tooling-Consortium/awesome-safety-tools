@@ -1,0 +1,73 @@
+---
+layout: default
+title: Search Results
+permalink: /search/
+---
+
+<h1>Search Results</h1>
+
+<div id="search-results">
+    <p>Loading results...</p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const resultsContainer = document.getElementById('search-results');
+        const urlParams = new URLSearchParams(window.location.search);
+        const query = urlParams.get('q');
+
+        if (!query) {
+            resultsContainer.innerHTML = '<p>No search query provided.</p>';
+            return;
+        }
+
+        // Display the search query
+        document.querySelector('h1').textContent = `Search Results for: "${query}"`;
+
+        // Load the data from your JSON file (we'll create this file from your README)
+        fetch('{{ "/assets/data/tools.json" | relative_url }}')
+            .then(response => response.json())
+            .then(data => {
+                const results = searchTools(data, query);
+                displayResults(results);
+            })
+            .catch(error => {
+                console.error('Error loading search data:', error);
+                resultsContainer.innerHTML = '<p>Error loading search data. Please try again later.</p>';
+            });
+
+        function searchTools(tools, query) {
+            query = query.toLowerCase();
+            return tools.filter(tool => {
+                return (
+                    tool.name.toLowerCase().includes(query) ||
+                    tool.description.toLowerCase().includes(query) ||
+                    tool.category.toLowerCase().includes(query) ||
+                    (tool.keywords && tool.keywords.some(keyword => keyword.toLowerCase().includes(query)))
+                );
+            });
+        }
+
+        function displayResults(results) {
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<p>No results found. Try a different search term.</p>';
+                return;
+            }
+
+            let html = `<p>Found ${results.length} result${results.length === 1 ? '' : 's'}</p>`;
+
+            results.forEach(tool => {
+                html += `
+          <div class="result-item">
+            <h2><a href="${tool.url}">${tool.name}</a></h2>
+            <p class="category">Category: ${tool.category}</p>
+            <p>${tool.description}</p>
+            <p><a href="${tool.github_url}" target="_blank">View on GitHub</a></p>
+          </div>
+        `;
+            });
+
+            resultsContainer.innerHTML = html;
+        }
+    });
+</script>

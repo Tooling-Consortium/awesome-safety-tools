@@ -1,0 +1,156 @@
+---
+- name: Hasher Matcher Action (HMA) by Meta
+  link: https://github.com/facebook/ThreatExchange/tree/main/hasher-matcher-actioner
+  description: hashing algorithm, matching function, and ability to hook into actions
+- name: PDQ by Meta
+  link: https://github.com/facebook/ThreatExchange/tree/main/pdq
+  description: perceptual hash algorithm for images
+- name: TMK by Meta
+  link: https://github.com/facebook/ThreatExchange/tree/main/tmk
+  description: visual similarity match for videos
+- name: VPDQ
+  link: https://github.com/facebook/ThreatExchange/tree/main/vpdq
+  description: visual similarity match for videos using PDQ algorithm
+- name: Hasher-Matcher-Actioner (CLIP demo)
+  link: https://github.com/juanmrad/HMA-CLIP-demo
+  description: HMA extension for CLIP as reference for adding other format extensins
+- name: Perception
+  link: https://github.com/thorn-oss/perception
+  description: provides a common wrapper around existing, popular perceptual hashes
+    (such as those implemented by ImageHash)
+- name: Altitude by Jigsaw
+  link: https://github.com/jigsaw-code/altitude
+  description: web UI and hash matching for violent extremism and terrorism content
+- name: Lattice Extract by Adobe
+  link: https://github.com/adobe/lattice_extract
+  description: grid and lattice detection to guard against FP in hash matching
+- name: RocketChat CSAM
+  link: https://github.com/prostasia/rocketchatcsam
+  description: CSAM hash matching for RocketChat
+- name: MediaModeration (Wiki Extension)
+  link: https://github.com/wikimedia/mediawiki-extensions-MediaModeration?tab=readme-ov-file
+  description: CSAM hash matching for Wikimedia
+- name: OSmod by Jigsaw
+  link: https://github.com/conversationai/conversationai-moderator
+  description: toolkit of machine learning (ML) tools, models, and APIs that platforms
+    can use to moderate content
+- name: Perspective API by Jigsaw
+  link: https://github.com/conversationai/perspectiveapi
+  description: machine learning-powered tool that helps platforms detect and assess
+    the toxicity of online conversations
+- name: Presidio by Microsoft
+  link: https://github.com/microsoft/presidio
+  description: toolset for detecting Personal Identifiable Information (PII) and other
+    sensitive data in images and text
+- name: Llama Guard by Meta
+  link: https://github.com/meta-llama/PurpleLlama/tree/main/Llama-Guard3
+  description: AI-powered content moderation model to detect harm in text-based interactions
+- name: Purple Llama by Meta
+  link: https://github.com/meta-llama/PurpleLlama/tree/main/Llama-Guard3
+  description: set of tools to assess and improve LLM security. Includes Llama Guard,
+    CyberSec Eval, and Code Shield
+- name: ShieldGemma by Google DeepMind
+  link: https://www.kaggle.com/code/fernandosr85/shieldgemma-web-content-safety-analyzer?scriptVersionId=198456916
+  description: AI safety toolkit by Google DeepMind designed to help detect and mitigate
+    harmful or unsafe outputs in LLM applications
+- name: Roblox Voice Safety Classifier
+  link: https://github.com/Roblox/voice-safety-classifier
+  description: machine learnign model that detects and moderates harmful content in
+    real-time voice chat on Roblox. Focuses on spoken language detection.
+- name: Detoxify by Unitary AI
+  link: https://github.com/unitaryai/detoxify
+  description: detects and mitigates generalized toxic language (including hate speech,
+    harassment, bullying) in text
+- name: NSFW Filtering
+  link: https://github.com/nsfw-filter/nsfw-filter
+  description: browser extension to block explicit images from online platforms. User
+    facing.
+- name: NSFW Keras Model
+  link: https://github.com/GantMan/nsfw_model
+  description: convoluted neural network (CNN) based explicit image ML model
+- name: Guardrails AI
+  link: https://github.com/guardrails-ai/guardrails
+  description: a Python framework that helps build safe AI applications checking input/output
+    for predefined risks
+- name: Mjolnir by Matrix
+  link: https://github.com/matrix-org/mjolnir
+  description: moderation bot for the Matrix protocol that automatically enforces
+    content policies
+- name: AbuseIO
+  link: https://github.com/AbuseIO/AbuseIO
+  description: abuse management platform designed to help organizations handle and
+    track abuse complaints related to online content, infrastructure, or services
+- name: Ozone by Bluesky
+  link: https://github.com/bluesky-social/ozone
+  description: labeling tool designed for Bluesky. Includes moderation features to
+    action on abuse flags, policy enforcement tools, and investigation features
+- name: Open Truss by Github
+  link: https://github.com/open-truss/open-truss
+  description: framework designed to help users create internal tools without needing
+    to write code
+- name: Access by Discord
+  link: https://github.com/discord/access
+  description: a centralized portal for managing access to internal systems within
+    any organization
+- name: SpamAssassin by Apache
+  link: https://spamassassin.apache.org
+  description: anti-spam platform that uses a variety of techniques, including text
+    analysis, Bayesian filtering, and DNS blocklists, to classify and block unsolicited
+    email
+- name: scikit-learn
+  link: https://github.com/scikit-learn/scikit-learn
+  description: python library including clustering through various algorithms, such
+    as K-Means, DBSCAN, and hierarchical clustering
+- name: RulesEngine by Microsoft
+  link: https://microsoft.github.io/RulesEngine/
+  description: a library for abstracting business logic, rules, and policies from
+    a system via JSON  for .NET language families
+- name: Marble
+  link: https://github.com/checkmarble/marble
+  description: a real-time fraud detection and compliance engine tailored for fintech
+    companies and financial institutions
+- name: Automod
+  link: https://github.com/bluesky-social/indigo/tree/main/automod
+  description: a tool for automating content moderation processes for the Bluesky
+    social network and other apps on the AT Protocol
+- name: Wikimedia Smite Spam
+  link: https://github.com/wikimedia/mediawiki-extensions-SmiteSpam
+  description: an extension for MediaWiki that helps identify and manage spam content
+    on a wiki
+- name: RabbitMQ
+  link: https://github.com/rabbitmq
+  description: a message broker that enables applications to communicate with each
+    other by sending messages through queues
+- name: BullMQ
+  link: https://github.com/taskforcesh/bullmq
+  description: message queue and batch processing for NodeJS and Python based on Redis
+- name: Owlculus
+  link: https://github.com/be0vlk/owlculus
+  description: an OSINT (Open-Source Intelligence) toolkit and case management platform
+- name: NCMEC Reporting by ello
+  link: https://github.com/ello/ncmec_reporting
+  description: a Ruby client library for reporting incidents to the National Center
+    for Missing & Exploited Children (NCMEC) CyberTipline
+- name: ThreatExchange by Meta
+  link: https://github.com/facebook/ThreatExchange
+  description: a platform that enables organizations to share information about  threats,
+    such as malware, phishing attacks, and online safety harms in a structured and
+    privacy-compliant manner
+- name: ThreatExchange Client via PHP
+  link: https://github.com/certly/threatexchange
+  description: a PHP client for ThreatExchange
+- name: ThreatExchange via Python
+  link: https://github.com/facebook/ThreatExchange/tree/main/python-threatexchange
+  description: a Python library for ThreatExchange
+- name: FediCheck
+  link: https://about.iftas.org/activities/moderation-as-a-service/fedicheck/
+  description: a web service designed to assist ActivityPub service providers, such
+    as Mastodon servers
+- name: Aegis Content Safety by NVIDIA
+  link: https://huggingface.co/datasets/nvidia/Aegis-AI-Content-Safety-Dataset-2.0
+  description: a dataset created by NVIDIA to aid in content moderation and toxicity
+    detection
+- name: Toxicity by Jigsaw
+  link: https://huggingface.co/datasets/google/jigsaw_toxicity_pred
+  description: a large number of Wikipedia comments which have been labeled by human
+    raters for toxic behavior

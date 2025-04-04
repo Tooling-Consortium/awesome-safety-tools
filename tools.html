@@ -1,0 +1,64 @@
+---
+layout: default
+title: All Tools
+permalink: /tools/
+---
+
+<h1>All Tools</h1>
+
+<div class="filters">
+    <input type="text" id="filter-input" placeholder="Filter tools...">
+    <select id="category-filter">
+        <option value="">All Categories</option>
+        {% for category in site.data.categories %}
+        <option value="{{ category }}">{{ category }}</option>
+        {% endfor %}
+    </select>
+</div>
+
+<div class="tools-container" id="tools-list">
+    {% for tool in site.data.tools %}
+    <div class="tool-card" data-category="{{ tool.category }}">
+        <h3>{{ tool.name }}</h3>
+        <span class="category">{{ tool.category }}</span>
+        <p>{{ tool.description }}</p>
+        <p><a href="{{ tool.link }}" target="_blank">View on GitHub</a></p>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const filterInput = document.getElementById('filter-input');
+        const categoryFilter = document.getElementById('category-filter');
+        const toolsList = document.getElementById('tools-list');
+        const toolCards = document.querySelectorAll('.tool-card');
+
+        function filterTools() {
+            const query = filterInput.value.toLowerCase();
+            const category = categoryFilter.value;
+
+            toolCards.forEach(card => {
+                const toolName = card.querySelector('h3').textContent.toLowerCase();
+                const toolDescription = card.querySelector('p').textContent.toLowerCase();
+                const toolCategory = card.dataset.category;
+
+                const matchesQuery = !query ||
+                    toolName.includes(query) ||
+                    toolDescription.includes(query);
+
+                const matchesCategory = !category ||
+                    toolCategory === category;
+
+                if (matchesQuery && matchesCategory) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        filterInput.addEventListener('input', filterTools);
+        categoryFilter.addEventListener('change', filterTools);
+    });
+</script>

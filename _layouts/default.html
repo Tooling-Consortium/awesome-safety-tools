@@ -1,0 +1,67 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: "Awesome Safety Tools" }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <!-- Simple.css for clean styling -->
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: "Awesome Safety Tools" }}</a></h1>
+    <p>{{ site.description | default: "A curated list of open-source AI safety tools" }}</p>
+
+    <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/tools' | relative_url }}">All Tools</a>
+        <a href="{{ '/categories' | relative_url }}">Categories</a>
+        <a href="{{ '/contribute' | relative_url }}">Contribute</a>
+    </nav>
+
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search tools...">
+        <button type="button" id="search-button"><i class="fas fa-search"></i></button>
+    </div>
+</header>
+
+<main>
+    {{ content }}
+</main>
+
+<footer>
+    <p>Maintained by <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></p>
+    <p><a href="{{ site.github.repository_url }}">View on GitHub</a></p>
+</footer>
+
+<!-- Search functionality -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+
+        const performSearch = () => {
+            const query = searchInput.value.toLowerCase().trim();
+            if (query) {
+                window.location.href = `{{ '/search' | relative_url }}?q=${encodeURIComponent(query)}`;
+            }
+        };
+
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+    });
+</script>
+</body>
+</html>
+

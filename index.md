@@ -24,4 +24,4 @@ Help and contribute by adding a pull request to add more resources and tools!
   {% endfor %}
 </div>
 
-[Browse All Tools](/tools/) | [View By Category](/categories/)
+[Browse All Tools]({{ '/tools/' | relative_url }}) | [View By Category]({{ '/categories/' | relative_url }})

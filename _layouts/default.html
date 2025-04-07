@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: "Awesome Safety Tools" }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.theme | relative_url }}">
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <ul>
+                <li class="downloads">
+                    <input type="text" id="search-input" placeholder="Search tools...">
+                    <button type="button" id="search-button"><i class="fas fa-search"></i></button>
+                </li>
+                <li class="title"><a href="{{ '/contribute' | relative_url }}">Contribute</a></li>
+                <li class="title"><a href="{{ '/categories' | relative_url }}">Categories</a></li>
+                <li class="title"><a href="{{ '/tools' | relative_url }}">All Tools</a></li>
+                <li class="title"><a href="{{ '/' | relative_url }}">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="wrapper">
+        <section>
+            {{ content }}
+        </section>
+    </div>
+
+    <footer>
+        <p>Maintained by <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></p>
+        <p><a href="{{ site.github.repository_url }}">View on GitHub</a></p>
+    </footer>
+
+    <!-- Search functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('search-input');
+            const searchButton = document.getElementById('search-button');
+
+            const performSearch = () => {
+                const query = searchInput.value.toLowerCase().trim();
+                if (query) {
+                    window.location.href = `{{ '/search' | relative_url }}?q=${encodeURIComponent(query)}`;
+                }
+            };
+
+            searchButton.addEventListener('click', performSearch);
+            searchInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    performSearch();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+

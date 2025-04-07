@@ -1,0 +1,26 @@
+<!-- _layouts/category.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ site.theme | relative_url }}">
+</head>
+<body>
+<h1>{{ page.title }}</h1>
+
+<div class="tools-container">
+    {% assign category_tools = site.data.tools | where: "category", page.title %}
+    {% for tool in category_tools %}
+    <div class="tool-card">
+        <h3><a href="{{ tool.link | relative_url }}">{{ tool.name }}</a></h3>
+        <p>{{ tool.description }}</p>
+        <p><a href="{{ tool.github_url }}" target="_blank">View on GitHub</a></p>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>

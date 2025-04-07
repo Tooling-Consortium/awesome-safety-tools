@@ -1,0 +1,156 @@
+---
+---
+
+
+body {
+    padding: 50px 50px 50px 50px;
+    box-sizing: border-box;
+    font-family: inherit;
+    margin: 20px;
+}
+
+#header nav {
+    margin-left: 20px;
+}
+
+#header nav ul li.search-container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    float: right;
+    margin-left: 6px;
+    background-color: black;
+}
+
+#search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tool-card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tool-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.tool-card .category {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.tool-card p {
+    margin-bottom: 15px;
+}
+
+.tool-card p:last-child {
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.filters input, .filters select {
+    padding: 10px;
+    min-width: 200px;
+}
+
+/* Category sections */
+.category-sections section {
+    margin-bottom: 50px;
+    padding: 0 10px;
+}
+
+.category-sections h2 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Search results */
+.result-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item:last-child {
+    border-bottom: none;
+}
+
+.result-item h2 {
+    margin-bottom: 10px;
+}
+
+.result-item .category {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+/* Page headings */
+/*h1 {*/
+/*    margin-bottom: 25px;*/
+/*    padding-bottom: 15px;*/
+/*    border-bottom: 1px solid #eee;*/
+/*}*/
+
+/* Footer spacing */
+footer {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .tools-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters input, .filters select {
+        width: 100%;
+    }
+}

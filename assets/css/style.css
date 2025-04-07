@@ -1,68 +1,27 @@
 ---
 ---
 
-html, body {
-    margin: 0;
-}
 
 body {
-    padding: 50px 50px 50px 50px !important;
+    padding: 50px 50px 50px 50px;
     box-sizing: border-box;
     font-family: inherit;
-    margin: 0 !important;
+    margin: 20px;
 }
 
-/* Container for all content */
-.container {
-    padding: 50px;
+#header nav {
+    margin-left: 20px;
 }
 
-/*main {*/
-/*    padding: 0;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-
-/* Header */
-header {
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    margin-bottom: 30px;
-}
-
-header h1 {
-    margin: 10px 0;
-    font-size: 2.2em;
-}
-
-header p {
-    margin: 10px 0 20px 0;
-    text-align: center;
-}
-
-header nav {
-    display: flex;
-    gap: 20px;
-    margin: 15px 0;
-    justify-content: center;
-    width: 100%;
-}
-
-header nav a {
-    padding: 8px 12px;
-    text-decoration: none;
-}
-
-header .search-container {
-    margin-top: 20px;
+#header nav ul li.search-container {
     width: 100%;
     max-width: 500px;
     display: flex;
+    float: right;
+    margin-left: 6px;
+    background-color: black;
 }
 
-/* Search input and button */
 #search-input {
     flex: 1;
     padding: 10px;
@@ -79,7 +38,6 @@ header .search-container {
     border-left: none;
 }
 
-/* Tool cards */
 .tools-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -164,11 +122,11 @@ header .search-container {
 }
 
 /* Page headings */
-h1 {
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #eee;
-}
+/*h1 {*/
+/*    margin-bottom: 25px;*/
+/*    padding-bottom: 15px;*/
+/*    border-bottom: 1px solid #eee;*/
+/*}*/
 
 /* Footer spacing */
 footer {

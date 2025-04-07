@@ -12,53 +12,56 @@ layout: default
     <link rel="stylesheet" href="{{ site.theme | relative_url }}">
 </head>
 <body>
-<header>
-    <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: "Awesome Safety Tools" }}</a></h1>
-    <p>{{ site.description | default: "A curated list of open-source AI safety tools" }}</p>
+    <div class="container">
+        <header>
+            <h1><a href="{{ '/' | relative_url }}">{{ site.title | default: "Awesome Safety Tools" }}</a></h1>
+            <p>{{ site.description | default: "A curated list of open-source AI safety tools" }}</p>
 
-    <nav>
-        <a href="{{ '/' | relative_url }}">Home</a>
-        <a href="{{ '/tools' | relative_url }}">All Tools</a>
-        <a href="{{ '/categories' | relative_url }}">Categories</a>
-        <a href="{{ '/contribute' | relative_url }}">Contribute</a>
-    </nav>
+            <nav>
+                <a href="{{ '/' | relative_url }}">Home</a>
+                <a href="{{ '/tools' | relative_url }}">All Tools</a>
+                <a href="{{ '/categories' | relative_url }}">Categories</a>
+                <a href="{{ '/contribute' | relative_url }}">Contribute</a>
+            </nav>
 
-    <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search tools...">
-        <button type="button" id="search-button"><i class="fas fa-search"></i></button>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search tools...">
+                <button type="button" id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            <p>Maintained by <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></p>
+            <p><a href="{{ site.github.repository_url }}">View on GitHub</a></p>
+        </footer>
+
+        <!-- Search functionality -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const searchInput = document.getElementById('search-input');
+                const searchButton = document.getElementById('search-button');
+
+                const performSearch = () => {
+                    const query = searchInput.value.toLowerCase().trim();
+                    if (query) {
+                        window.location.href = `{{ '/search' | relative_url }}?q=${encodeURIComponent(query)}`;
+                    }
+                };
+
+                searchButton.addEventListener('click', performSearch);
+                searchInput.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        performSearch();
+                    }
+                });
+            });
+        </script>
     </div>
-</header>
 
-<main>
-    {{ content }}
-</main>
-
-<footer>
-    <p>Maintained by <a href="https://github.com/{{ site.github_username }}">{{ site.github_username }}</a></p>
-    <p><a href="{{ site.github.repository_url }}">View on GitHub</a></p>
-</footer>
-
-<!-- Search functionality -->
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const searchInput = document.getElementById('search-input');
-        const searchButton = document.getElementById('search-button');
-
-        const performSearch = () => {
-            const query = searchInput.value.toLowerCase().trim();
-            if (query) {
-                window.location.href = `{{ '/search' | relative_url }}?q=${encodeURIComponent(query)}`;
-            }
-        };
-
-        searchButton.addEventListener('click', performSearch);
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                performSearch();
-            }
-        });
-    });
-</script>
 </body>
 </html>
 
